@@ -1,0 +1,39 @@
+.progress-container{
+    background-color: rgba(0, 0, 0, 0.973);
+    color: white;
+    width: 90%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-bottom: 1.5rem;
+
+    .top{
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 30px;
+    }
+
+    .bottom{
+        margin: 25px;
+
+        .taskQnt{
+            color: grey;
+            margin: 5px;
+        }
+
+        .taskPercent{
+            margin: 5px;
+            font-size: 5rem;
+            font-weight: bold;
+        }
+
+        .progress-bar{
+            margin: 5px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: rgb(59, 41, 138);
+        }
+    }
+}

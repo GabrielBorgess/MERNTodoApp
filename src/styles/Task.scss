@@ -1,0 +1,53 @@
+.task-container{    
+    display: flex;
+    gap: 15px;
+
+    .checkbox{
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .task-info{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        .task-name{
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .task-date{
+            color: grey;
+        }
+        
+        .delete-task{
+            cursor: pointer;
+        }
+    }
+}
+
+.ongoin{
+    .checkbox{
+        background-color: none;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+}
+
+.completed{
+    .checkbox{
+        background-color: rgba(128, 128, 128, 0.50);
+        border: 1px solid rgba(128, 128, 128, 0.50);
+        border-radius: 5px;
+    }
+
+    .task-name{
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-decoration: line-through;
+        color: grey;
+    }
+}

@@ -1,0 +1,9 @@
+@import './styles/reset.scss';
+@import './styles/font.scss';
+
+@import './styles/home.scss';
+@import './styles/Progress.scss';
+@import './styles/Task.scss';
+@import './styles/Tasks.scss';
+
+
