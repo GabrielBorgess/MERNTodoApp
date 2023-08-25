@@ -56,12 +56,12 @@ const Tasks = () => {
   }
   
   return (
-    <div className="tasks-container">
-      <div className="title">
-        <h1>Tasks</h1>
-        <div className="qty">2</div>
+    <div className="tasks-container w-11/12 mb-6">
+      <div className="title flex items-center pb-4">
+        <h1 className='text-4xl font-bold'>Tasks</h1>
+        <div className="qty ml-3 bg-gray-400 pt-1 pb-1 pl-2 pr-2 rounded-xl">2</div>
       </div>
-      <div className="tasks">
+      <div className="tasks flex flex-col gap-4">
         {todos.map(todo => (
           <div className={`task-container ${todo.isDone ? 'completed': 'ongoin'}`} key={todo._id} onClick={() => completetodo(todo._id)}>
             <div className="checkbox"></div>
