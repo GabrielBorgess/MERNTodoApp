@@ -5,9 +5,9 @@ import '../index.css'
 
 const Home = () => {
   return (
-    <div className="home-container">
-        <div className="nav">
-            <h1>Bom dia, <span className='name'>Gabriel</span></h1>
+    <div className="home-container flex flex-col min-h-screen min-w-scren items-center justify-start pt-10">
+        <div className="nav flex text-5xl font-extralight pb-6">
+            <h1 className='text-center font-sans'>Bom dia, <span className='font-medium'>Gabriel</span></h1>
         </div>
         <Progress/>
         <Tasks/>
