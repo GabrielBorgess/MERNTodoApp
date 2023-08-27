@@ -63,14 +63,14 @@ const Tasks = () => {
       </div>
       <div className="tasks flex flex-col gap-4">
         {todos.map(todo => (
-          <div className={`task-container ${todo.isDone ? 'completed': 'ongoin'}`} key={todo._id} onClick={() => completetodo(todo._id)}>
-            <div className="checkbox"></div>
-            <div className="task-info">
+          <div className={`task-container flex gap-4 items-center ${todo.isDone ? 'completed': 'ongoin'}`} key={todo._id} onClick={() => completetodo(todo._id)}>
+            <div className="checkbox h-8 w-8 cursor-pointer"></div>
+            <div className="task-info flex items-center w-full justify-between">
               <div className="">
-                <p className="task-name">{todo.text}</p>
-                <p className="task-date">Today</p>
+                <p className="task-name text-lg font-medium">{todo.text}</p>
+                <p className="task-date text-gray-400">Today</p>
               </div>
-              <div className="delete-task" onClick={()=> deleteTodo(todo._id)}>delete</div>
+              <div className="delete-task cursor-pointer" onClick={()=> deleteTodo(todo._id)}>delete</div>
             </div>
           </div>
         ))}
