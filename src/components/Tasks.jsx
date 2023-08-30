@@ -61,7 +61,7 @@ const Tasks = () => {
         <h1 className='text-4xl font-bold'>Tasks</h1>
         <div className="qty ml-3 bg-gray-400 pt-1 pb-1 pl-2 pr-2 rounded-xl">2</div>
       </div>
-      <div className="tasks flex flex-col gap-4">
+      <div className="tasks flex flex-col gap-4 max-w-full">
         {todos.map(todo => (
           <div className={`task-container flex gap-4 items-center ${todo.isDone ? 'completed': 'ongoin'}`} key={todo._id} onClick={() => completetodo(todo._id)}>
             <div className="checkbox h-8 w-8 cursor-pointer"></div>
@@ -78,7 +78,7 @@ const Tasks = () => {
       <div className="addTask-btn" onClick={()=> setPopUp(true)}>New Task</div>
       {popUp ? (
         <div className='popUp'>
-          <div className="closePopUp"> Close </div>
+          <div className="closePopUp" onClick={()=>setPopUp(false)}>Close</div>
           <div className="content">
             <p>Add new task</p>
             <input type="text" 
